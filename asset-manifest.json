@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/neurolide/static/css/main.6a0217a7.css",
-    "main.js": "/neurolide/static/js/main.80fbca87.js",
+    "main.css": "/neurolide/static/css/main.06f73a8e.css",
+    "main.js": "/neurolide/static/js/main.ae15a220.js",
     "static/js/453.16b4f67a.chunk.js": "/neurolide/static/js/453.16b4f67a.chunk.js",
     "static/media/logo.png": "/neurolide/static/media/logo.84eba2cc8b7ce36a3e03.png",
     "static/media/settings-icon.svg": "/neurolide/static/media/settings-icon.79f50b11873eb8d5f085.svg",
@@ -42,12 +42,12 @@
     "static/media/arrow-icon-small-dark.svg": "/neurolide/static/media/arrow-icon-small-dark.b0cd5a144ea0fe1e3138.svg",
     "static/media/arrow-icon.svg": "/neurolide/static/media/arrow-icon.34cce0322ab334f45e51.svg",
     "static/media/arrow-icon-small-white.svg": "/neurolide/static/media/arrow-icon-small-white.0d84dee1742262a63fca.svg",
-    "main.6a0217a7.css.map": "/neurolide/static/css/main.6a0217a7.css.map",
-    "main.80fbca87.js.map": "/neurolide/static/js/main.80fbca87.js.map",
+    "main.06f73a8e.css.map": "/neurolide/static/css/main.06f73a8e.css.map",
+    "main.ae15a220.js.map": "/neurolide/static/js/main.ae15a220.js.map",
     "453.16b4f67a.chunk.js.map": "/neurolide/static/js/453.16b4f67a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a0217a7.css",
-    "static/js/main.80fbca87.js"
+    "static/css/main.06f73a8e.css",
+    "static/js/main.ae15a220.js"
   ]
 }
