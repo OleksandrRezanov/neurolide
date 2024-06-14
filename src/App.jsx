@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Manager } from './pages/Manager/Manager';
 import { Users } from './pages/Manager/Users';
 import { MediaChannels } from './pages/Manager/MediaChannels';
@@ -145,7 +145,7 @@ const accounts = {
   affiliat: 'affiliat',
 };
 
-const currentAccount = accounts.affiliat ;
+const currentAccount = accounts.manager;
 
 function App() {
   return (
