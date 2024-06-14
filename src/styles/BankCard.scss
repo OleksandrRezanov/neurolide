@@ -1,0 +1,124 @@
+@import './variables/colors.scss';
+
+.highlighted {
+  opacity: 0.6;
+}
+
+.card {
+  padding: 32px;
+  width: 382px;
+  height: 218px;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  font-family: "Public Sans", sans-serif;
+  color: $menu-text;
+  box-shadow: 0px 4px 20px 0px $bank-card-shadow;
+  background-image: url('../img/bank-card-bg.webp');
+  background-size: cover;
+
+  &__ballance {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: left;
+
+    &--visa::after,
+    &--master-card::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+    }
+
+    &--visa::after {
+      width: 60px;
+      height: 20px;
+      background-image: url('../img/icons/visa-icon.svg');
+    }
+
+    &--master-card::after {
+      width: 64px;
+      height: 39px;
+      background-image: url('../img/icons/master-card-icon.svg');
+    }
+  }
+
+  &__ballance-value {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__number {
+    position: relative;
+    padding-right: 26px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+
+      background-image: url('../img/icons/copy-icon.svg');
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &__expiration-date {
+    width: 56px;
+    cursor: pointer;
+  }
+
+  &__expiration-date-title {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  &__expiration-date-value {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+  &__holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__holder-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  &__cvv {
+    cursor: pointer;
+  }
+}

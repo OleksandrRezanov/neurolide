@@ -1,0 +1,41 @@
+@import './variables/colors.scss';
+@import './variables/variables.scss';
+
+.form-item {
+  font-family: "Public Sans", sans-serif;
+
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.8px;
+    text-align: left;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid $input-border;
+    border-radius: 18px;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+
+    background-color: inherit;
+    transition-duration: $transition-duration;
+
+    &--text-area {
+      height: 70px;
+    }
+
+    &:focus {
+      border-color: $main-item-value;
+    }
+  }
+}

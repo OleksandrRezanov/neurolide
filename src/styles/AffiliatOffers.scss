@@ -1,0 +1,22 @@
+.affiliat-offers {
+
+  &__table-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 3fr 2fr 2fr 2fr 2fr 2fr;
+  }
+
+  &__table--row {
+
+    &:hover .affiliat-offers__table-item-promotion {
+      background-image: none;
+    }
+  }
+
+  &__table-item-promotion {
+
+    background-image: none;
+    &::after {
+      display: none;
+    }
+  }
+}

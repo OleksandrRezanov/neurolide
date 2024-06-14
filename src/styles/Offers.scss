@@ -1,0 +1,14 @@
+.offers {
+  padding: 20px 30px 20px 42px;
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__table-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 3fr 2fr 2fr 2fr 2fr;
+  }
+}

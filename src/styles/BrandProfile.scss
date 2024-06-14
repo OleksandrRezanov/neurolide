@@ -1,0 +1,40 @@
+.brand-profile {
+  min-height: 100%;
+  box-sizing: border-box;
+
+  background-image: url('../img/brand-profile-bottom-bg.png');
+  background-position: 43px bottom;
+  background-repeat: no-repeat;
+
+  &__bg {
+    height: 525px;
+  }
+
+  &__profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    margin-top: 160px;
+    margin-left: 50px;
+    transform: skewX(-20deg);
+  }
+
+  &__buttons {
+    width: 445px;
+    display: flex;
+    gap: 10px;
+    margin-left: 69px;
+  }
+
+  &__button {
+    flex: 1;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 73px;
+  }
+}

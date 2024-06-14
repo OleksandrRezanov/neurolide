@@ -1,0 +1,48 @@
+@import './variables/colors.scss';
+@import './variables/variables.scss';
+
+.add-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 218px;
+  height: 218px;
+  border-radius: 20px;
+
+  color: $main-item-value;
+  background-color: $main-modal-body-bg;
+  box-shadow: 0px 4px 20px 0px $bank-card-shadow;
+  cursor: pointer;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    box-shadow: 0px 4px 5px 0px $bank-card-shadow;
+  }
+
+  &__title {
+    position: relative;
+    padding-top: 50px;
+
+    font-family: "Public Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.45px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 40px;
+      height: 40px;
+
+      background-image: url('../img/icons/add-icon.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+
+      transform: translateX(-50%);
+    }
+  }
+}

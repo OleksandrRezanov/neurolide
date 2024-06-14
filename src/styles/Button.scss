@@ -1,0 +1,241 @@
+@import './variables/colors.scss';
+@import './variables/variables.scss';
+
+.button {
+  flex: 1;
+  border-radius: 20px;
+
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.8px;
+  text-align: center;
+
+  box-shadow: 0px 4px 20px 0px $bank-card-shadow;
+  cursor: pointer;
+  transition-duration: $transition-duration;
+
+  &:hover {
+    box-shadow: 0px 4px 5px 0px $bank-card-shadow;
+  }
+
+  &--aside {
+    padding: 20px;
+
+    color: $menu-text;
+    background-color: $main-aside-button-bg;
+  }
+
+  &--search {
+    padding: 15px;
+    color: $main-item-value;
+  }
+
+  &--small {
+    padding: 10px 50px;
+    color: $main-item-title;
+  }
+
+  &__small-has-bg {
+    color: $menu-text;
+    background-color: $button-small-bg;
+  }
+
+  &--cancel {
+    padding: 10px 22px;
+    color: $menu-text;
+    background-color: $main-cancel-button-bg;
+  }
+
+  &--gradient {
+    padding: 10px 34px;
+    color: $menu-text;
+    background: $button-gradient-bg;
+  }
+
+  &--medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    font-size: inherit;
+    color: $main-item-title;
+    background-color: $menu-text;
+  }
+
+  &--medium-has-bg {
+    color: $menu-text;
+    background-color: $button-medium-bg;
+  }
+
+  &--medium-selected {
+    background-color: $main-aside-button-bg;
+  }
+
+  &--medium-large {
+    padding: 15px 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.5px;
+
+    color: $main-item-value;
+    background-color: $main-modal-body-bg;
+  }
+
+  &--medium-large-has-bg {
+    color: $menu-text;
+    background: $button-gradient-bg;
+
+  }
+
+  &--large {
+    padding: 15px 50px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: $menu-text;
+    background-color: $main-aside-button-bg;
+  }
+
+  &--extra-large {
+    padding: 15px 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+
+    color: $main-item-value;
+    box-shadow: 0px 4px 10px 0px $bank-card-shadow;
+  }
+
+  &--active {
+    background-color: $main-aside-button-bg-active;
+  }
+
+  &__title {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+
+      width: 20px;
+      height: 20px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+
+    &--has-icon {
+      padding-left: 30px;
+    }
+
+    &--card::before {
+      background-image: url('../img/icons/AsideButton/card-icon.svg');
+    }
+
+    &--profile::before {
+      background-image: url('../img/icons/AsideButton/profile-icon.svg');
+    }
+
+    &--support::before {
+      background-image: url('../img/icons/AsideButton/support-icon.svg');
+    }
+
+    &--tablet::before {
+      background-image: url('../img/icons/AsideButton/tablet-icon.svg');
+    }
+
+    &--user::before {
+      background-image: url('../img/icons/AsideButton/user-icon.svg');
+    }
+
+    &--users::before {
+      background-image: url('../img/icons/AsideButton/users-icon.svg');
+    }
+
+    &--search::before {
+      background-image: url('../img/icons/search-icon.svg');
+    }
+  }
+}
+
+.icon-button {
+  width: 26px;
+  height: 26px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--settings {
+    background-image: url('../img/icons/IconButton/settings-icon.svg');
+  }
+
+  &--check-mark-yellow {
+    background-image: url('../img/icons/IconButton/check-mark-yellow.svg');
+  }
+
+  &--cross-mark-yellow {
+    background-image: url('../img/icons/IconButton/cross-mark-yellow.svg');
+  }
+
+  &--cross-mark-red {
+    background-image: url('../img/icons/IconButton/cross-mark-red.svg');
+  }
+
+  &--check-mark-green {
+    background-image: url('../img/icons/IconButton/check-mark-green.svg');
+  }
+
+  &--vip {
+    width: 29px;
+    height: 29px;
+    background-image: url('../img/icons/IconButton/vip-icon.svg');
+  }
+
+  &--burger-menu {
+    background-image: url('../img/icons/IconButton/burger-menu-icon.svg');
+  }
+
+  &--help {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/icons/IconButton/help-icon.svg');
+  }
+
+  &--delete-basket {
+    width: 23px;
+    background-image: url('../img/icons/IconButton/delete-icon-basket.svg');
+  }
+
+  &--delete {
+    background-image: url('../img/icons/IconButton/delete-icon.svg');
+  }
+
+  &--edit {
+    width: 28px;
+    height: 28px;
+    background-image: url('../img/icons/IconButton/edit-icon.svg');
+  }
+
+  &--check-mark-green-bold {
+    width: 28px;
+    height: 28px;
+    background-image: url('../img/icons/IconButton/check-mark-green-bold.svg');
+  }
+
+  &--small {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+}

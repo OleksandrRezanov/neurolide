@@ -1,0 +1,157 @@
+@import './variables/colors.scss';
+
+.auth {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    margin-top: 81px;
+    margin-bottom: 139px;
+    align-self: center;
+    justify-self: center;
+    width: 454px;
+  }
+
+  &__body-title {
+    margin-bottom: 50px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+
+    color: $main-item-value;
+  }
+
+  &__body-buttons {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    height: 64px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-align: left;
+  }
+
+  &__body-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__input-password {
+    position: relative;
+  }
+
+  &__input-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+
+    color: $main-item-value;
+  }
+
+  &__input {
+    height: 64px;
+    padding: 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.5px;
+
+    color: $main-cancel-button-bg;
+
+    &--password {
+      padding-right: 60px;
+    }
+  }
+
+  &__remember-data {
+    text-align: left;
+  }
+
+  &__nav-button {
+    color: $main-aside-button-bg;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__input-eye {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    width: 18px;
+    height: 12.5px;
+
+    cursor: pointer;
+    background-image: url('../img/icons/eye-icon.svg');
+  }
+
+  &__input-forgot-password {
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.8px;
+    cursor: pointer;
+
+    color: $button-small-bg;
+
+  }
+
+  &__remember-data {
+    position: relative;
+    padding-left: 50px;
+
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      border: 1px solid $main-item-value;
+      border-radius: 5px;
+
+      transform: translateY(-50%);
+    }
+
+    &--active::before {
+      border-color: $button-small-bg;
+      background-color: $button-small-bg;
+      background-image: url('../img/icons/white-check-mark.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 35%;
+
+    background: $button-gradient-bg;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 20px;
+
+    transform-origin: top;
+    transform: skewX(30deg);
+  }
+}

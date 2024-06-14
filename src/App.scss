@@ -1,0 +1,42 @@
+@import './styles/variables/colors.scss';
+
+.App {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+
+  &__header {
+    width: 295px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: $header-gradient-bg;
+    height: 100%;
+  }
+
+  &__header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+  }
+
+  &__header-burger {
+    display: none;
+  }
+
+  &__header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__header-list-active {
+    background-color: red;
+  }
+
+  &__main {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

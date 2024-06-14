@@ -1,0 +1,22 @@
+@import './variables/colors.scss';
+
+.brand-media-channels {
+
+  &__search {
+    width: 289px;
+  }
+
+  &__table-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 3fr 2fr 2fr 2fr;
+
+    &:hover .media-channels__table-item-button {
+      color: $main-item-title;
+      background-color: $main-modal-body-bg;
+    }
+
+    &:hover .media-channels__table-item-button::after {
+      background-image: url('../img/icons/arrow-icon-small-dark.svg');
+    }
+  }
+}

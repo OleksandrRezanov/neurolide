@@ -1,0 +1,11 @@
+.brand-offers {
+
+  &__search {
+    width: 296px;
+  }
+
+  &__table-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 3fr 2fr 2fr 2fr;
+  }
+}

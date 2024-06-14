@@ -1,0 +1,66 @@
+@import './variables/colors.scss';
+
+.top-menu-item {
+  position: relative;
+  padding: 10px 36px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+
+  background-color: $main-modal-body-bg;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 9px;
+  }
+
+  &--red::after {
+    background-color: $main-item-line-red;
+  }
+
+  &--yellow::after {
+    background-color: $main-item-line-yellow;
+  }
+
+  &--green::after {
+    background-color: $main-item-line-green;
+  }
+
+  &--purple::after {
+    background-color: $main-item-line-purple;
+  }
+
+  &--blue::after {
+    background-color: $main-item-line-blue;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    color: $main-item-title;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    color: $main-item-value;
+  }
+}

@@ -1,0 +1,60 @@
+@import './variables/colors.scss';
+
+.drop-down-button {
+  position: relative;
+  padding: 10px 12px;
+  border-radius: 19px;
+
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: $main-item-title;
+  box-shadow: 0px 4px 20px 0px $bank-card-shadow;
+  background-color: $main-modal-body-bg;
+  cursor: pointer;
+
+  &--arrow {
+    &::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 6px;
+      left: 50%;
+      bottom: 4px;
+
+      background-image: url('../img/icons/arrow-icon-small-dark.svg');
+      background-repeat: no-repeat;
+
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+  
+      &::after {
+        background-image: url('../img/icons/arrow-icon-small-white.svg');
+      }
+    }
+  }
+
+  &:hover {
+    color: $menu-text;
+    background-color: $button-small-bg;
+  }
+
+  &--open {
+    margin-bottom: -37px;
+
+    &::after {
+      bottom: 9px;
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__drop {
+    margin-top: 12px;
+    padding-bottom: 7px;
+    text-align: right;
+  }
+}

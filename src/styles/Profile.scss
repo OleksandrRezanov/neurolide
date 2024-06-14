@@ -1,0 +1,9 @@
+.profile {
+  position: relative;
+  padding: 20px 30px 20px 42px;
+
+  &__table-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 3fr 2fr 2fr 2fr;
+  }
+}
